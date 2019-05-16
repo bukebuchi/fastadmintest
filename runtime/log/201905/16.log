@@ -1,0 +1,216 @@
+---------------------------------------------------------------
+[ 2019-05-16T10:55:44+08:00 ] 0.0.0.0 GET localhost:8088/admin/wechat/config/index?sort=id&order=desc&offset=0&limit=10&filter=%7B%7D&op=%7B%7D&_=1557924755691
+[ sql ] [ DB ] CONNECT:[ UseTime:0.027996s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_group_access` [ RunTime:0.004711s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `fa_auth_group_access` `aga` LEFT JOIN `fa_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.001575s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_rule` [ RunTime:0.002584s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `fa_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.001688s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_wechat_config` [ RunTime:0.002955s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `fa_wechat_config` ORDER BY `id` DESC LIMIT 1 [ RunTime:0.000795s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_wechat_config` ORDER BY `id` DESC LIMIT 0,10 [ RunTime:0.000792s ]
+---------------------------------------------------------------
+[ 2019-05-16T10:55:49+08:00 ] 0.0.0.0 GET localhost:8088/admin/wechat/config/edit/ids/3?dialog=1
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002911s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_group_access` [ RunTime:0.001608s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `fa_auth_group_access` `aga` LEFT JOIN `fa_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.001118s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_rule` [ RunTime:0.001616s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `fa_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.001867s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_wechat_config` [ RunTime:0.003842s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_wechat_config` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.000965s ]
+---------------------------------------------------------------
+[ 2019-05-16T10:56:02+08:00 ] 0.0.0.0 GET localhost:8088/admin/wechat/config/edit/ids/2?dialog=1
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003114s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_group_access` [ RunTime:0.001782s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `fa_auth_group_access` `aga` LEFT JOIN `fa_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.001128s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_rule` [ RunTime:0.003602s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `fa_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.001877s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_wechat_config` [ RunTime:0.005046s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_wechat_config` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000890s ]
+---------------------------------------------------------------
+[ 2019-05-16T10:56:10+08:00 ] 0.0.0.0 GET localhost:8088/admin/wechat/config/edit/ids/1?dialog=1
+[ sql ] [ DB ] CONNECT:[ UseTime:0.013875s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_group_access` [ RunTime:0.001165s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `fa_auth_group_access` `aga` LEFT JOIN `fa_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.001035s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_rule` [ RunTime:0.001724s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `fa_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.001780s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_wechat_config` [ RunTime:0.002591s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_wechat_config` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000681s ]
+---------------------------------------------------------------
+[ 2019-05-16T10:56:46+08:00 ] 0.0.0.0 POST localhost:8088/admin/wechat/menu/edit
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011427s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_group_access` [ RunTime:0.001513s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `fa_auth_group_access` `aga` LEFT JOIN `fa_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.001145s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_rule` [ RunTime:0.001318s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `fa_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.001445s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_wechat_config` [ RunTime:0.002870s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_wechat_config` WHERE  `name` = 'menu' LIMIT 1 [ RunTime:0.000829s ]
+[ error ] [8]未定义数组索引: type
+---------------------------------------------------------------
+[ 2019-05-16T10:56:52+08:00 ] 0.0.0.0 POST localhost:8088/admin/wechat/menu/sync
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002644s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_group_access` [ RunTime:0.001186s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `fa_auth_group_access` `aga` LEFT JOIN `fa_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.000900s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_rule` [ RunTime:0.001361s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `fa_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.001368s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_wechat_config` [ RunTime:0.002675s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_wechat_config` WHERE  `name` = 'menu' LIMIT 1 [ RunTime:0.000641s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_admin_log` [ RunTime:0.002632s ]
+[ sql ] [ SQL ] INSERT INTO `fa_admin_log` (`title` , `content` , `url` , `admin_id` , `username` , `useragent` , `ip` , `createtime`) VALUES ('微信管理 菜单管理 同步' , '[]' , '/admin/wechat/menu/sync' , 1 , 'admin' , 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36' , '0.0.0.0' , 1557975411) [ RunTime:0.063046s ]
+---------------------------------------------------------------
+[ 2019-05-16T10:56:55+08:00 ] 0.0.0.0 POST localhost:8088/admin/wechat/menu/sync
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002833s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_group_access` [ RunTime:0.001387s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `fa_auth_group_access` `aga` LEFT JOIN `fa_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.000924s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_rule` [ RunTime:0.001502s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `fa_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.001427s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_wechat_config` [ RunTime:0.025217s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_wechat_config` WHERE  `name` = 'menu' LIMIT 1 [ RunTime:0.000765s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_admin_log` [ RunTime:0.002722s ]
+[ sql ] [ SQL ] INSERT INTO `fa_admin_log` (`title` , `content` , `url` , `admin_id` , `username` , `useragent` , `ip` , `createtime`) VALUES ('微信管理 菜单管理 同步' , '[]' , '/admin/wechat/menu/sync' , 1 , 'admin' , 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36' , '0.0.0.0' , 1557975415) [ RunTime:0.040845s ]
+---------------------------------------------------------------
+[ 2019-05-16T10:57:08+08:00 ] 0.0.0.0 GET localhost:8088/admin/wechat/response?addtabs=1
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011200s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_group_access` [ RunTime:0.002773s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `fa_auth_group_access` `aga` LEFT JOIN `fa_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.001006s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_rule` [ RunTime:0.002447s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `fa_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.001574s ]
+[ sql ] [ SQL ] SELECT `title`,`remark` FROM `fa_auth_rule` WHERE  `name` = 'wechat/response' LIMIT 1 [ RunTime:0.001074s ]
+---------------------------------------------------------------
+[ 2019-05-16T10:57:09+08:00 ] 0.0.0.0 GET localhost:8088/admin/wechat/response/index?sort=id&order=desc&offset=0&limit=10&filter=%7B%7D&op=%7B%7D&_=1557975428544
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012590s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_group_access` [ RunTime:0.002389s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `fa_auth_group_access` `aga` LEFT JOIN `fa_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.000950s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_rule` [ RunTime:0.001284s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `fa_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.001379s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_wechat_response` [ RunTime:0.002681s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `fa_wechat_response` ORDER BY `id` DESC LIMIT 1 [ RunTime:0.000774s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_wechat_response` ORDER BY `id` DESC LIMIT 0,10 [ RunTime:0.000851s ]
+---------------------------------------------------------------
+[ 2019-05-16T11:00:20+08:00 ] 0.0.0.0 GET localhost:8088/admin/wechat/config/index?sort=id&order=desc&offset=0&limit=10&filter=%7B%7D&op=%7B%7D&_=1557924755692
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003603s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_group_access` [ RunTime:0.002141s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `fa_auth_group_access` `aga` LEFT JOIN `fa_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.000962s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_rule` [ RunTime:0.001328s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `fa_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.001294s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_wechat_config` [ RunTime:0.002650s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `fa_wechat_config` ORDER BY `id` DESC LIMIT 1 [ RunTime:0.000671s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_wechat_config` ORDER BY `id` DESC LIMIT 0,10 [ RunTime:0.000626s ]
+---------------------------------------------------------------
+[ 2019-05-16T11:00:29+08:00 ] 0.0.0.0 GET localhost:8088/admin/wechat/autoreply?addtabs=1
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003471s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_group_access` [ RunTime:0.001564s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `fa_auth_group_access` `aga` LEFT JOIN `fa_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.001261s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_rule` [ RunTime:0.001845s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `fa_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.002629s ]
+[ sql ] [ SQL ] SELECT `title`,`remark` FROM `fa_auth_rule` WHERE  `name` = 'wechat/autoreply' LIMIT 1 [ RunTime:0.001047s ]
+---------------------------------------------------------------
+[ 2019-05-16T11:00:30+08:00 ] 0.0.0.0 GET localhost:8088/admin/wechat/autoreply/index?sort=id&order=desc&offset=0&limit=10&filter=%7B%7D&op=%7B%7D&_=1557975629881
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003015s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_group_access` [ RunTime:0.001632s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `fa_auth_group_access` `aga` LEFT JOIN `fa_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.000972s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_rule` [ RunTime:0.001882s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `fa_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.001485s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_wechat_autoreply` [ RunTime:0.002201s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `fa_wechat_autoreply` ORDER BY `id` DESC LIMIT 1 [ RunTime:0.000725s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_wechat_autoreply` ORDER BY `id` DESC LIMIT 0,10 [ RunTime:0.000718s ]
+---------------------------------------------------------------
+[ 2019-05-16T11:00:34+08:00 ] 0.0.0.0 GET localhost:8088/admin/wechat/config/index?sort=id&order=desc&offset=0&limit=10&filter=%7B%7D&op=%7B%7D&_=1557924755693
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002973s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_group_access` [ RunTime:0.002594s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `fa_auth_group_access` `aga` LEFT JOIN `fa_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.001656s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_rule` [ RunTime:0.043730s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `fa_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.002298s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_wechat_config` [ RunTime:0.002823s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `fa_wechat_config` ORDER BY `id` DESC LIMIT 1 [ RunTime:0.000917s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_wechat_config` ORDER BY `id` DESC LIMIT 0,10 [ RunTime:0.000943s ]
+---------------------------------------------------------------
+[ 2019-05-16T11:00:39+08:00 ] 0.0.0.0 GET localhost:8088/admin/wechat/config/edit/ids/3?dialog=1
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002945s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_group_access` [ RunTime:0.003470s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `fa_auth_group_access` `aga` LEFT JOIN `fa_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.001091s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_rule` [ RunTime:0.001847s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `fa_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.001576s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_wechat_config` [ RunTime:0.003923s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_wechat_config` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.000885s ]
+---------------------------------------------------------------
+[ 2019-05-16T11:00:47+08:00 ] 0.0.0.0 GET localhost:8088/admin/wechat/response/index?sort=id&order=desc&offset=0&limit=10&filter=%7B%7D&op=%7B%7D&_=1557975428545
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003282s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_group_access` [ RunTime:0.001549s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `fa_auth_group_access` `aga` LEFT JOIN `fa_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.001255s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_rule` [ RunTime:0.001174s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `fa_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.001347s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_wechat_response` [ RunTime:0.003439s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `fa_wechat_response` ORDER BY `id` DESC LIMIT 1 [ RunTime:0.000758s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_wechat_response` ORDER BY `id` DESC LIMIT 0,10 [ RunTime:0.000568s ]
+---------------------------------------------------------------
+[ 2019-05-16T11:00:50+08:00 ] 0.0.0.0 GET localhost:8088/admin/wechat/response/edit/ids/5?dialog=1
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011033s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_group_access` [ RunTime:0.003526s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `fa_auth_group_access` `aga` LEFT JOIN `fa_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.001341s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_rule` [ RunTime:0.001791s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `fa_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.001455s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_wechat_response` [ RunTime:0.001983s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_wechat_response` WHERE  `id` = 5 LIMIT 1 [ RunTime:0.000943s ]
+---------------------------------------------------------------
+[ 2019-05-16T11:07:18+08:00 ] 0.0.0.0 GET localhost:8088/admin/addon/downloaded?callback=jQuery224026432638466639724_1557922389629&sort=id&order=desc&filter=%7B%22type%22%3A%22local%22%2C%22faversion%22%3A%221.0.0.20190510_beta%22%7D&op=%7B%22type%22%3A%22%3D%22%2C%22faversion%22%3A%22%3D%22%7D&_=1557922389640
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003368s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_group_access` [ RunTime:0.001803s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `fa_auth_group_access` `aga` LEFT JOIN `fa_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.002194s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_rule` [ RunTime:0.001843s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `fa_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.002240s ]
+---------------------------------------------------------------
+[ 2019-05-16T11:07:21+08:00 ] 0.0.0.0 GET localhost:8088/admin/addon/config?name=wechat&dialog=1
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002830s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_group_access` [ RunTime:0.004281s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `fa_auth_group_access` `aga` LEFT JOIN `fa_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.001403s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_rule` [ RunTime:0.001467s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `fa_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.001463s ]
+---------------------------------------------------------------
+[ 2019-05-16T11:36:59+08:00 ] 0.0.0.0 GET localhost:8088/admin/addon/downloaded?callback=jQuery224026432638466639724_1557922389629&sort=id&order=desc&filter=%7B%22type%22%3A%22local%22%2C%22faversion%22%3A%221.0.0.20190510_beta%22%7D&op=%7B%22type%22%3A%22%3D%22%2C%22faversion%22%3A%22%3D%22%7D&_=1557922389641
+[ sql ] [ DB ] CONNECT:[ UseTime:0.004723s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_group_access` [ RunTime:0.004096s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `fa_auth_group_access` `aga` LEFT JOIN `fa_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.001066s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_rule` [ RunTime:0.001354s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `fa_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.001381s ]
+---------------------------------------------------------------
+[ 2019-05-16T14:05:19+08:00 ] 0.0.0.0 GET localhost:8088/admin/wechat/autoreply/index?sort=id&order=desc&offset=0&limit=10&filter=%7B%7D&op=%7B%7D&_=1557975629882
+[ sql ] [ DB ] CONNECT:[ UseTime:0.177285s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_group_access` [ RunTime:0.288357s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `fa_auth_group_access` `aga` LEFT JOIN `fa_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.065163s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_rule` [ RunTime:0.019415s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `fa_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.001681s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_wechat_autoreply` [ RunTime:0.046494s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `fa_wechat_autoreply` ORDER BY `id` DESC LIMIT 1 [ RunTime:0.028920s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_wechat_autoreply` ORDER BY `id` DESC LIMIT 0,10 [ RunTime:0.001194s ]
+---------------------------------------------------------------
+[ 2019-05-16T14:05:25+08:00 ] 0.0.0.0 POST localhost:8088/admin/wechat/menu/edit
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002985s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_group_access` [ RunTime:0.020936s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `fa_auth_group_access` `aga` LEFT JOIN `fa_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.020365s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_rule` [ RunTime:0.025818s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `fa_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.024200s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_wechat_config` [ RunTime:0.001531s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_wechat_config` WHERE  `name` = 'menu' LIMIT 1 [ RunTime:0.022863s ]
+[ error ] [8]未定义数组索引: type
+---------------------------------------------------------------
+[ 2019-05-16T14:05:28+08:00 ] 0.0.0.0 POST localhost:8088/admin/wechat/menu/edit
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002927s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_group_access` [ RunTime:0.001836s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `fa_auth_group_access` `aga` LEFT JOIN `fa_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.001308s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_rule` [ RunTime:0.002072s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `fa_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.002353s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_wechat_config` [ RunTime:0.001470s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_wechat_config` WHERE  `name` = 'menu' LIMIT 1 [ RunTime:0.001021s ]
+[ sql ] [ SQL ] UPDATE `fa_wechat_config`  SET `value`='[{\"name\":\"FastAdmin\",\"sub_button\":[{\"type\":\"view\",\"name\":\"官网\",\"url\":\"http:\\/\\/www.fastadmin.net\"},{\"type\":\"view\",\"name\":\"在线演示\",\"url\":\"\"},{\"type\":\"view\",\"name\":\"文档\",\"url\":\"http:\\/\\/doc.fastadmin.net\"}]},{\"name\":\"在线客服\",\"key\":\"58cb852984970\",\"type\":\"click\"},{\"name\":\"关于我们\",\"key\":\"58bf944aa0777\",\"type\":\"click\"}]',`updatetime`=1557986728  WHERE  `id` = 1 [ RunTime:0.105989s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_admin_log` [ RunTime:0.018467s ]
+[ sql ] [ SQL ] INSERT INTO `fa_admin_log` (`title` , `content` , `url` , `admin_id` , `username` , `useragent` , `ip` , `createtime`) VALUES ('微信管理 菜单管理 修改' , '[]' , '/admin/wechat/menu/edit' , 1 , 'admin' , 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36' , '0.0.0.0' , 1557986728) [ RunTime:0.075730s ]
+---------------------------------------------------------------
+[ 2019-05-16T14:05:32+08:00 ] 0.0.0.0 POST localhost:8088/admin/wechat/menu/edit
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003063s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_group_access` [ RunTime:0.047352s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `fa_auth_group_access` `aga` LEFT JOIN `fa_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.001151s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_rule` [ RunTime:0.001409s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `fa_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.001446s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_wechat_config` [ RunTime:0.021729s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_wechat_config` WHERE  `name` = 'menu' LIMIT 1 [ RunTime:0.000891s ]
+[ error ] [8]未定义数组索引: type
